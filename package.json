@@ -4,7 +4,8 @@
   "description": "Organizational Tool",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/server/index.js"
+    "start": "nodemon ./src/server/index.js",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,19 @@
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
