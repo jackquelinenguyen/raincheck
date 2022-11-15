@@ -26,6 +26,10 @@ app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// routers
+// serve static files 
+app.get('/', express.static(path.join(__dirname, '../client/public')));
+
 // catch all
 app.use((req, res) => res.sendStatus(404));
 
