@@ -1,0 +1,23 @@
+.category {
+    border: 1px solid #ebebeb;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.categoryContainer {
+    margin-top: 4rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+   grid-template-columns: repeat(4, 1fr);   
+   grid-gap: 8rem;
+}
+
+.title {
+    margin: 1rem;
+    color: #ebebeb;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+}

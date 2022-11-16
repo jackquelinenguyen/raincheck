@@ -1,6 +1,19 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import Home from './routes/Home.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+import { createRoot } from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from 'react-router-dom';
+
+const router = createBrowserRouter([
+  { path: '/', 
+  element: <Home /> }
+]);
+
+createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+);

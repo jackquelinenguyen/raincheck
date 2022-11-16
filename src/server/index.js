@@ -4,6 +4,7 @@ const path = require('path');
 const { urlencoded } = require('express');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // require in routes
 const categoryRouter = require('./routes/categoryRouter');
@@ -29,6 +30,7 @@ mongoose
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(cors());
 
 // serve static files
 app.use(express.static(path.join(__dirname, '../client/public')));

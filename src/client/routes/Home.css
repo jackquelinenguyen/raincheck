@@ -1,0 +1,19 @@
+.homeContainer {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+    background-color: #283e3e;
+    padding: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border: 1px solid #aab5b2;
+}
+
+body {
+    background: linear-gradient(85deg, #aab5b2 50%, #203131 50%);
+
+}
