@@ -5,6 +5,10 @@ const { urlencoded } = require('express');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 
+// require in routes
+const categoryRouter = require('./routes/categoryRouter');
+const noteRouter = require('./routes/noteRouter');
+
 // port information
 const app = express();
 const PORT = 3000;
@@ -26,17 +30,22 @@ app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// routers
-// serve static files 
-app.get('/', express.static(path.join(__dirname, '../client/public')));
+// serve static files
+app.use(express.static(path.join(__dirname, '../client/public')));
+
+// api routers
+app.use('/api/category', categoryRouter);
+app.use('/api/note', noteRouter);
+
+//auth router
 
 // catch all
-app.use((req, res) => res.sendStatus(404));
+app.use((req, res) => res.status(404).send('Page not found'));
 
 // global error handler
 app.use((err, req, res, next) => {
   const defaultErr = {
-    log: 'Error handler caught unknown middleware error',
+    log: 'Global Error handler caught unknown middleware error',
     status: 400,
     message: { err: 'An error occured caught in global error handler' },
   };
