@@ -1,6 +1,6 @@
 import React from 'react';
 import Category from '../Category/Category.jsx';
-import { Fragment } from 'react';
+import './Dashboard.css';
 
 const Dashboard = ({ categories }) => {
   // map through categories and render category component with a title

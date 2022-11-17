@@ -43,8 +43,9 @@ categoryRouter.patch(
 categoryRouter.delete(
   '/deleteCategory/:name',
   categoryController.deleteCategory,
+  noteController.deletedCategory,
   (req, res) => {
-    return res.status(200).json(res.locals.cats);
+    return res.status(200).json(res.locals.updatedData);
   }
 );
 module.exports = categoryRouter;

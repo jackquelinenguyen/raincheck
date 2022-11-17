@@ -75,8 +75,8 @@ categoryController.deleteCategory = async (req, res, next) => {
     const { name } = req.params;
     await Category.findOneAndDelete({ name });
     // send back new data without the deleted one
-    const cats = await Category.find({});
-    res.locals.cats = cats;
+    const newCats = await Category.find({});
+    res.locals.updatedData = [newCats];
     return next();
   } catch (err) {
     return next({

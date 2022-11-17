@@ -1,0 +1,9 @@
+.note {
+    color: #2d2a34;
+    font-size: small;
+    background-color: #ebebeb;
+    overflow: hidden;
+    margin: 1rem;
+    padding: .3rem;
+    border-radius: .3rem;
+}

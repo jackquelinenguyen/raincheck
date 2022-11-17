@@ -4,11 +4,23 @@ input {
 
 input {
     margin: 2rem;
-    color: #ebebeb;
-    width: 24rem;
+    width: 20rem;
     font-family: monospace;
-    background-color: #dda25ed2;
+    background-color: #a7c7dc;
+    text-emphasis-color: #2d2a34;
     border: 1px solid #ebebeb;
     padding: .4rem;
     border-radius: .2rem;
 }
+
+
+input:focus::placeholder {
+  opacity: 5px;
+  color: transparent;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+

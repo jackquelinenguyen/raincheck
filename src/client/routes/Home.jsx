@@ -19,7 +19,9 @@ const Home = () => {
     <div className="homeContainer">
       <Logo />
       <SearchBar />
-      <Dashboard categories={categories} />
+      <div className="dashContainer">
+        <Dashboard categories={categories} />
+      </div>
     </div>
   );
 };

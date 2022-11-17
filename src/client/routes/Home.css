@@ -1,19 +1,49 @@
 .homeContainer {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 3rem;
-    background-color: #283e3e;
-    padding: 5rem;
+    /* border-radius: 3rem; */
+    /* background-color: #70798c; */
+    background-color: #7281a0ec;
+    background: linear-gradient(81deg,#7281a0ec 54%, #c2c9d6ec 50%); 
+    padding: 3rem;
     padding-left: 10rem;
     padding-right: 10rem;
-    border: 1px solid #aab5b2;
+    border: 5px solid #a0a8ba;
+    /* box-shadow: 0 4px 15px 0 rgba(87, 87, 87, 0.2), 0 6px 20px 0 rgba(120, 120, 120, 0.19); */
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+    overflow:hidden;
+    width: 60%;
 }
 
+
 body {
-    background: linear-gradient(85deg, #aab5b2 50%, #203131 50%);
+    /* background: linear-gradient(85deg, #aab5b2 50%, #203131 50%); */
+    background: linear-gradient(to right, #4b6782, #2d2a34);
+    /* background: linear-gradient(-45deg, #22223B, #373757, #57577a, #8888ad);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite; */
+}
+/* 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.dashContainer {
+    width: 90%;
+    overflow-y: hidden;
 
 }

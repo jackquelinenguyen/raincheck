@@ -4,8 +4,10 @@ import './Category.css';
 
 const Category = ({ title }) => {
   return (
-    <div>
-      <div className="category"></div>
+    <div className="categoryBox">
+      <div className="category">
+        <Note />
+      </div>
       <div className="title">{title}</div>
     </div>
   );

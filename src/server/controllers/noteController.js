@@ -77,6 +77,24 @@ noteController.updateNote = async (req, res, next) => {
   }
 };
 
+// delete note
+noteController.deleteNote = async (req, res, next) => {
+  try {
+    const { title } = req.body;
+    const deleted = await Note.findOneAndDelete({ title });
+    const newData = await Note.find({});
+    res.locals.newData = newData;
+    return next();
+  } catch (err) {
+    return next({
+      log: 'Error handler caught in noteController deleteNote',
+      message: {
+        err: 'An error has occured in noteController deleteNote',
+      },
+    });
+  }
+};
+
 // for when a category name gets updated, we'll have to update the category key in each of it's notes too
 noteController.updateNewCategory = async (req, res, next) => {
   try {
@@ -98,19 +116,20 @@ noteController.updateNewCategory = async (req, res, next) => {
   }
 };
 
-// delete note
-noteController.deleteNote = async (req, res, next) => {
+// for when a category gets deleted and you need to wipe the database clean
+
+noteController.deletedCategory = async (req, res, next) => {
   try {
-    const { title } = req.body;
-    const deleted = await Note.findOneAndDelete({ title });
-    const newData = await Note.find({});
-    res.locals.newData = newData;
+    const { name } = req.params;
+    const deleted = await Note.deleteMany({ category: name });
+    const newNotes = await Note.find({});
+    res.locals.updatedData.push(newNotes);
     return next();
   } catch (err) {
     return next({
-      log: 'Error handler caught in noteController deleteNote',
+      log: 'Error handler caught in noteController deletedCategory',
       message: {
-        err: 'An error has occured in noteController deleteNote',
+        err: 'An error has occured in noteController deletedCategory',
       },
     });
   }
