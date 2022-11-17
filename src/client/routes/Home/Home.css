@@ -43,11 +43,15 @@ body {
 } */
 
 .dashContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     border-radius: .9rem;
     /* border: 1px solid #ebebeb64; */
     overflow-y: hidden;
     box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 10px 0 rgba(151, 151, 151, 0.288);
     background-color: #c2c9d6ec;
+    
 
 }

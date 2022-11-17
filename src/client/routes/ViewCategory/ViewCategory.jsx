@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
 import Icon from '../../components/Logo/Icon.jsx';
 import { Link } from 'react-router-dom';
@@ -10,16 +11,17 @@ import AddNote from '../../components/AddNote/AddNote.jsx';
 
 const ViewCategory = () => {
   const location = useLocation();
-  const title = location.state.category;
+  const name = location.state.category;
   const { notes } = useContext(NotesContext);
 
   const filteredNotes = notes.filter((note) => {
-    return note.category === title;
+    return note.category === name;
   });
 
   const renderedNotes = filteredNotes.map((note, i) => {
     return (
       <BigNote
+        category={name}
         key={`${note}${i}`}
         title={note.title}
         details={note.details}
@@ -35,7 +37,6 @@ const ViewCategory = () => {
     setNewNote(newNote ? false : true);
   };
 
-  console.log('IM IN VIEW CATEGORIES');
   return (
     <div>
       <div className="setting">
@@ -49,12 +50,12 @@ const ViewCategory = () => {
         </button>
         {newNote && (
           <div className="addNoteContainer">
-            <AddNote title={title} />
+            <AddNote category={name} />
           </div>
         )}
       </div>
       <div className="catContainer">
-        <div className="viewCategoryCategory">{title}</div>
+        <div className="viewCategoryCategory">{name}</div>
         <div>{renderedNotes}</div>
       </div>
     </div>

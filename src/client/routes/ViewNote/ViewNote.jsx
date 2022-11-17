@@ -10,12 +10,15 @@ import UpdateNote from '../../components/UpdateNote/UpdateNote.jsx';
 const ViewNote = () => {
   const location = useLocation();
   const title = location.state.title;
+  const category = location.state.category;
   const { notes } = useContext(NotesContext);
 
   const indivNote = notes.filter((note) => {
     return note.title === title;
   });
+
   console.log(`rendered view note:`, indivNote);
+
   const [updateNote, setUpdateNote] = useState(false);
 
   const updateThisNote = (event) => {
@@ -38,6 +41,7 @@ const ViewNote = () => {
             <UpdateNote
               title={title}
               data={[
+                category,
                 indivNote[0].title,
                 indivNote[0].link,
                 indivNote[0].details,

@@ -20,9 +20,10 @@ const router = createBrowserRouter([
     path: 'viewCategory',
     element: <ViewCategory />,
     errorElement: <ErrorPage />,
+    children: [],
   },
   { path: 'viewCategory/viewNote', element: <ViewNote /> },
-  { path: 'viewCategory/addNote', element: <AddNote /> },
+  // { path: 'viewCategory/addNote', element: <AddNote /> },
 ]);
 
 createRoot(document.getElementById('root')).render(

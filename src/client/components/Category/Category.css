@@ -2,7 +2,7 @@
     text-decoration: none;
 }
 
-.category {
+.categoryNotesContainer {
     border: 2px solid #ebebeb7e;
     border-radius: 2rem;
     width: 13rem;
@@ -12,16 +12,20 @@
     background-image: url('./category-background.jpg');
     margin-left: 3rem;
     margin-right: 3rem;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: start; */
     overflow-x: scroll;
+    padding: .5rem;
+    padding-bottom: .5rem;
 }
 
 .categoryBox {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .categoryBox:hover {

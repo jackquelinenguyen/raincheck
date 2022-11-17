@@ -1,3 +1,7 @@
+// import React from 'react';
+// import './UpdateNote.css';
+// import { NotesContext } from '../../Context/notesContext.jsx';
+// import { useRef, useContext } from 'react';
 import React from 'react';
 import './UpdateNote.css';
 import { NotesContext } from '../../Context/notesContext.jsx';
@@ -5,7 +9,7 @@ import { useRef, useContext } from 'react';
 
 const UpdateNote = ({ title, data }) => {
   const { setNotes } = useContext(NotesContext);
-  console.log(title);
+
 
   const titleInput = useRef();
   const linkInput = useRef();

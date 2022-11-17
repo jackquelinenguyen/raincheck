@@ -1,7 +1,8 @@
 
 
 .categoryContainer {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     /* grid-template-columns: repeat(4, 1fr);   */
     white-space: nowrap;
@@ -21,9 +22,9 @@
 
 @-webkit-keyframes move {
     0% {
-      margin-left: -110%;
+      margin-left: -280%;
     }
     100% {
-      margin-left: 100%;
+      margin-left: 200%;
     }
   }

@@ -3,7 +3,7 @@ import './AddNote.css';
 import { NotesContext } from '../../Context/notesContext.jsx';
 import { useRef, useContext } from 'react';
 
-const AddNote = ({ title }) => {
+const AddNote = ({ category }) => {
   const { setNotes } = useContext(NotesContext);
 
   const titleInput = useRef();
@@ -16,7 +16,7 @@ const AddNote = ({ title }) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        category: title,
+        category,
         title: titleInput.current.value,
         link: linkInput.current.value,
         details: detailsInput.current.value,

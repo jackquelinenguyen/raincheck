@@ -5,16 +5,17 @@ import { Link } from 'react-router-dom';
 import { NotesContext } from '../../Context/notesContext.jsx';
 import { useContext } from 'react';
 
-const Category = ({ title }) => {
+const Category = ({ name }) => {
   const { notes } = useContext(NotesContext);
 
   const filteredNotes = notes.filter((note) => {
-    return note.category === title;
+    return note.category === name;
   });
 
   const renderedNotes = filteredNotes.map((note, i) => {
     return (
       <Note
+        category={name}
         key={`${note}${i}`}
         title={note.title}
         details={note.details}
@@ -26,11 +27,11 @@ const Category = ({ title }) => {
   return (
     <Link
       to={'viewCategory'}
-      state={{ category: title }}
+      state={{ category: name }}
       className="categoryBox"
     >
-      <div className="category">{renderedNotes}</div>
-      <div className="title">{title}</div>
+      <div className="categoryNotesContainer">{renderedNotes}</div>
+      <div className="title">{name}</div>
     </Link>
   );
 };

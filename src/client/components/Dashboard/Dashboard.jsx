@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   const { categories } = useContext(CategoriesContext);
   const categoryPosts = categories.map((category, i) => {
-    return <Category key={`${category}${i}`} title={category.name} />;
+    return <Category key={`${category}${i}`} name={category.name} />;
   });
 
   return <div className="categoryContainer">{categoryPosts}</div>;
