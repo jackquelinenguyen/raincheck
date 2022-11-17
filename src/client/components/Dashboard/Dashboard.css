@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     -webkit-animation-name: move;
-    -webkit-animation-duration: 23s;
+    -webkit-animation-duration: 20s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: right;
     -webkit-animation-timing-function: linear; 
@@ -21,7 +21,7 @@
 
 @-webkit-keyframes move {
     0% {
-      margin-left: -180%;
+      margin-left: -110%;
     }
     100% {
       margin-left: 100%;

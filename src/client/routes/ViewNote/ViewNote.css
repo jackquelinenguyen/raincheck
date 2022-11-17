@@ -1,0 +1,51 @@
+ .label {
+    color: #ebebeb;
+    font-size: 2rem;
+    background-color: #2d2a34;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: .3rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding: 1rem;
+    }
+
+    .details {
+        display: flex;
+        color: #2d2a34;
+        font-size: 1rem;
+        background-color: #ebebeb;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: .3rem;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        overflow: scroll;
+    }
+
+    .viewNote {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1rem solid #ebebeb;
+    width: 40%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-decoration: none;
+    }
+
+    .containerDetails {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+
+    .noteIcon {
+        padding: 6rem;
+        margin-left: 4rem;
+    }

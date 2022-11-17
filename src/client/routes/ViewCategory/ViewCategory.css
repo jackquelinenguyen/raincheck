@@ -1,15 +1,30 @@
 .homeButton {
     padding: 6rem;
+    margin-left: 4rem;
+
 }
 
-.viewCategoryCategory {
+.catContainer {
+    display: flex;
+    border: 1rem solid #ebebeb;
+    width: 40%;
+    height: 70%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-decoration: none;
+
 }
 
-.testing {
-    width: 20rem;
-    height: 20rem;
+.viewCategoryCategory {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ebebeb;
+    font-size: 4rem;
+    margin: 2rem;
+
+
+
 }

@@ -1,0 +1,12 @@
+.bigNote{color: #2d2a34;
+font-size: 2rem;
+background-color: #ebebeb;
+overflow: hidden;
+margin: 1rem;
+padding: .3rem;
+border-radius: .3rem;
+font-family: 'Courier New', Courier, monospace;
+width: 90%;
+text-decoration: none;
+
+}

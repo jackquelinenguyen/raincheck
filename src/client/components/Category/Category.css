@@ -1,7 +1,10 @@
+*{
+    text-decoration: none;
+}
+
 .category {
     border: 2px solid #ebebeb7e;
     border-radius: 2rem;
-    display: inline-block;
     width: 13rem;
     height: 13rem;
     box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
@@ -9,21 +12,22 @@
     background-image: url('./category-background.jpg');
     margin-left: 3rem;
     margin-right: 3rem;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-x: scroll;
 }
 
 .categoryBox {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .categoryBox:hover {
     transform: scale(1.1);
     cursor: pointer;
+
 }
 
 .title {
@@ -59,3 +63,5 @@
       margin-left: 10%;
     }
   } */
+
+  
