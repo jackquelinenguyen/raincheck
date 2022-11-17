@@ -21,6 +21,7 @@ const ViewCategory = () => {
   const renderedNotes = filteredNotes.map((note, i) => {
     return (
       <BigNote
+        id={note._id}
         category={name}
         key={`${note}${i}`}
         title={note.title}

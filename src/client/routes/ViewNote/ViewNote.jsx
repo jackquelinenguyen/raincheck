@@ -9,12 +9,13 @@ import UpdateNote from '../../components/UpdateNote/UpdateNote.jsx';
 
 const ViewNote = () => {
   const location = useLocation();
-  const title = location.state.title;
-  const category = location.state.category;
+  const { title, id, category } = location.state;
   const { notes } = useContext(NotesContext);
 
   const indivNote = notes.filter((note) => {
-    return note.title === title;
+    // console.log('NOTES FROM DATA', note);
+    // console.log('MATCHING IDEA FOR NOTE', id);
+    return note._id === id;
   });
 
   console.log(`rendered view note:`, indivNote);
@@ -41,7 +42,7 @@ const ViewNote = () => {
             <UpdateNote
               title={title}
               data={[
-                category,
+                indivNote[0].category,
                 indivNote[0].title,
                 indivNote[0].link,
                 indivNote[0].details,

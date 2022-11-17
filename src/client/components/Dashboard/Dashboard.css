@@ -22,7 +22,7 @@
 
 @-webkit-keyframes move {
     0% {
-      margin-left: -280%;
+      margin-left: -270%;
     }
     100% {
       margin-left: 200%;
