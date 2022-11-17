@@ -25,7 +25,7 @@
     margin: 2rem;
 }
 
-.newNote, .submitNote {
+.newNote, .submitNote, .deleteButton {
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: fit-content;
@@ -60,4 +60,15 @@
     width: fit-content;
     height: fit-content;
     margin-left: 6rem;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteNote {
+    margin-right: 15rem;
+    margin-top: 15rem;
+    align-self: baseline;
 }

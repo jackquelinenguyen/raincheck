@@ -8,6 +8,7 @@ import { useLocation } from 'react-router-dom';
 import { NotesContext } from '../../Context/notesContext.jsx';
 import BigNote from '../../components/BigNote/BigNote.jsx';
 import AddNote from '../../components/AddNote/AddNote.jsx';
+import DeleteNote from '../../components/DeleteNote/DeleteNote.jsx';
 
 const ViewCategory = () => {
   const location = useLocation();
@@ -33,27 +34,44 @@ const ViewCategory = () => {
 
   // render add data component logic
   const [newNote, setNewNote] = useState(false);
+  const [deleteNote, setDeleteNote] = useState(false);
 
   const showNewNote = (event) => {
     setNewNote(newNote ? false : true);
   };
 
+  const showDeleteOptions = (event) => {
+    setDeleteNote(deleteNote ? false : true);
+  };
+
   return (
     <div>
-      <div className="setting">
-        <div className="homeButton">
-          <Link to="/">
-            <Icon />
-          </Link>
-        </div>
-        <button className="newNote" onClick={showNewNote}>
-          Add New Note
-        </button>
-        {newNote && (
-          <div className="addNoteContainer">
-            <AddNote category={name} />
+      <div className="mainContainer">
+        <div className="setting">
+          <div className="homeButton">
+            <Link to="/">
+              <Icon />
+            </Link>
           </div>
-        )}
+          <button className="newNote" onClick={showNewNote}>
+            Add New Note
+          </button>
+          {newNote && (
+            <div className="addNoteContainer">
+              <AddNote category={name} />
+            </div>
+          )}
+        </div>
+        <div className="deleteNote">
+          <button className="deleteButton" onClick={showDeleteOptions}>
+            Delete Note
+          </button>
+          {deleteNote && (
+            <div className="deleteNoteContainer">
+              <DeleteNote category={name} />
+            </div>
+          )}
+        </div>
       </div>
       <div className="catContainer">
         <div className="viewCategoryCategory">{name}</div>
