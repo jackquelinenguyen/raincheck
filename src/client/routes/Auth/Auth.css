@@ -1,0 +1,22 @@
+.authPageContainer {
+    border: .5rem solid #ebebeb7d;
+    border-radius: 45rem;
+    width: 45rem;
+    height: 45rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 150px 0 rgba(193, 193, 193, 0.2), 0 6px 100px 0 rgba(151, 151, 151, 0.288);
+    background-color: #3642645a;
+}
+
+
+
+.authPageIcon {
+
+}
+

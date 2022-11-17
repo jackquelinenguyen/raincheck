@@ -49,7 +49,7 @@ const ViewCategory = () => {
       <div className="mainContainer">
         <div className="setting">
           <div className="homeButton">
-            <Link to="/">
+            <Link to="/home">
               <Icon />
             </Link>
           </div>

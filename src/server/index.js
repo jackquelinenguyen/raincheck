@@ -9,6 +9,7 @@ const cors = require('cors');
 // require in routes
 const categoryRouter = require('./routes/categoryRouter');
 const noteRouter = require('./routes/noteRouter');
+const authRouter = require('./routes/authRouter');
 
 // port information
 const app = express();
@@ -40,6 +41,7 @@ app.use('/api/category', categoryRouter);
 app.use('/api/note', noteRouter);
 
 //auth router
+app.use('/api/auth', authRouter);
 
 // catch all
 app.use((req, res) => res.status(404).send('Page not found'));

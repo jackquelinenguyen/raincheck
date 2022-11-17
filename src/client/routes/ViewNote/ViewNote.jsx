@@ -30,7 +30,7 @@ const ViewNote = () => {
     <div>
       <div className="updateSettings">
         <div className="noteIcon">
-          <Link to="/">
+          <Link to="/home">
             <Icon />
           </Link>
         </div>
