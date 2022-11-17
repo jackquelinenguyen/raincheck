@@ -9,7 +9,7 @@ const Category = ({ title }) => {
       <div className="category">
         <Note />
       </div>
-      <Link to={'/'} className="title">
+      <Link to={'viewCategory'} className="title">
         {title}
       </Link>
     </div>
