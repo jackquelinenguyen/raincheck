@@ -16,6 +16,11 @@
 
 }
 
+.categoryBox {
+    display: flex;
+    flex-direction: column;
+}
+
 .categoryBox:hover {
     transform: scale(1.1);
     cursor: pointer;

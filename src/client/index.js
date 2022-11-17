@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './routes/Home.jsx';
-
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import { createRoot } from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -10,8 +10,7 @@ import {
 } from 'react-router-dom';
 
 const router = createBrowserRouter([
-  { path: '/', 
-  element: <Home /> }
+  { path: '/', element: <Home />, errorElement: <ErrorPage /> },
 ]);
 
 createRoot(document.getElementById('root')).render(

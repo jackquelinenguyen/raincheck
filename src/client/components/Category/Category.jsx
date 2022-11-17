@@ -1,6 +1,7 @@
 import React from 'react';
 import Note from '../Note/Note.jsx';
 import './Category.css';
+import { Outlet, Link } from 'react-router-dom';
 
 const Category = ({ title }) => {
   return (
@@ -8,7 +9,9 @@ const Category = ({ title }) => {
       <div className="category">
         <Note />
       </div>
-      <div className="title">{title}</div>
+      <Link to={'/'} className="title">
+        {title}
+      </Link>
     </div>
   );
 };
