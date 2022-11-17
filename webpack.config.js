@@ -6,6 +6,7 @@ module.exports = {
   entry: ['./src/client/index.js'],
   output: {
     path: path.join(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'dist.js',
   },
   mode: 'development',
@@ -14,6 +15,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
+    historyApiFallback: true,
     port: 8080,
     static: {
       directory: path.join(__dirname, '/dist'),

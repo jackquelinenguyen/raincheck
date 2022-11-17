@@ -4,6 +4,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import ViewCategory from './routes/ViewCategory/ViewCategory.jsx';
 import ViewNote from './routes/ViewNote/ViewNote.jsx';
 import { createRoot } from 'react-dom/client';
+import AddNote from './components/AddNote/AddNote.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   { path: 'viewCategory/viewNote', element: <ViewNote /> },
+  { path: 'viewCategory/addNote', element: <AddNote /> },
 ]);
 
 createRoot(document.getElementById('root')).render(

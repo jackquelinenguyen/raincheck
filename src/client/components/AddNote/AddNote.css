@@ -1,0 +1,15 @@
+.formAdd {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.addNoteInput {
+    width: 20rem;
+    height: 3rem;
+    font-family: monospace;
+    background-color: #a7c7dc;
+    text-emphasis-color: #2d2a34;
+    border: 1px solid #ebebeb;
+    border-radius: .2rem;
+}

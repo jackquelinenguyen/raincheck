@@ -1,9 +1,8 @@
+
 .homeButton {
-    padding: 6rem;
-    margin-left: 4rem;
-
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
-
 .catContainer {
     display: flex;
     border: 1rem solid #ebebeb;
@@ -24,7 +23,41 @@
     color: #ebebeb;
     font-size: 4rem;
     margin: 2rem;
+}
 
+.newNote, .submitNote {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+    height:fit-content;
+    border: 1px solid #ebebeb;
+    color: #ebebeb;
+    font-family: monospace;
+    background-color: #2d2a34bd;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 
+.newNote:hover {
+    cursor: pointer;
+}
 
+.submitNote:hover {
+    cursor: pointer;
+}
+.setting {
+    /* display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 6rem;
+    margin-left: 8rem;
+    align-items: center; */
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 6rem;
 }

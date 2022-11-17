@@ -5,7 +5,11 @@ const SearchBar = () => {
   return (
     <form>
       <label>
-        <input type="text" placeholder="looking for something?" />
+        <input
+          className="searchBar"
+          type="text"
+          placeholder="looking for something?"
+        />
       </label>
     </form>
   );

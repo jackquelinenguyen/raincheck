@@ -27,7 +27,7 @@ const Home = () => {
         return setCategories(data);
       })
       .catch((err) => console.log('error', error));
-  });
+  }, []);
 
   useEffect(() => {
     fetch('http://localhost:3000/api/note/getNotes')
@@ -36,7 +36,7 @@ const Home = () => {
         return setNotes(data);
       })
       .catch((err) => console.log('error', error));
-  });
+  }, []);
 
   return (
     <div className="homeContainer">

@@ -12,8 +12,15 @@ const Category = ({ title }) => {
     return note.category === title;
   });
 
-  const renderedNotes = filteredNotes.map((note) => {
-    return <Note title={note.title} details={note.details} link={note.link} />;
+  const renderedNotes = filteredNotes.map((note, i) => {
+    return (
+      <Note
+        key={`${note}${i}`}
+        title={note.title}
+        details={note.details}
+        link={note.link}
+      />
+    );
   });
 
   return (

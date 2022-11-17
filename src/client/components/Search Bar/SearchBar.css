@@ -2,7 +2,7 @@ input {
   all: unset;
 }
 
-input {
+.searchBar {
     margin: 2rem;
     width: 20rem;
     font-family: monospace;

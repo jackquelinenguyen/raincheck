@@ -8,8 +8,8 @@ const Dashboard = () => {
   // map through categories and render category component with a title
 
   const { categories } = useContext(CategoriesContext);
-  const categoryPosts = categories.map((category) => {
-    return <Category title={category.name} />;
+  const categoryPosts = categories.map((category, i) => {
+    return <Category key={`${category}${i}`} title={category.name} />;
   });
 
   return <div className="categoryContainer">{categoryPosts}</div>;

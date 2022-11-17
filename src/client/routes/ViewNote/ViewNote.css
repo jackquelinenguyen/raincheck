@@ -25,7 +25,7 @@
 
     .viewNote {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
     border: 1rem solid #ebebeb;
     width: 40%;
     height: 50%;
@@ -46,6 +46,41 @@
     }
 
     .noteIcon {
-        padding: 6rem;
-        margin-left: 4rem;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .updateNote:hover {
+        cursor: pointer;
+    }
+    .updateNote, .submitUpdateNote  {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: fit-content;
+        height:fit-content;
+        border: 1px solid #ebebeb;
+        color: #ebebeb;
+        font-family: monospace;
+        background-color: #2d2a34bd;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+
+
+    .updateSettings {
+        /* display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-top: 6rem;
+        margin-left: 8rem;
+        align-items: center; */
+        /* display: grid;
+        grid-template-rows: 1fr 1fr 1fr; */
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 6rem;
     }
