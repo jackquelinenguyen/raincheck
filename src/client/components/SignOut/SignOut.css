@@ -1,0 +1,30 @@
+.signOutContainer {
+    position: fixed;
+    top: 12%;
+    left: 83%;
+    z-index: 100;
+}
+
+.signOutButton {
+    background-color: #ebebebb8;
+    color: #2d2a34;
+    font-family: monospace;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+    transition: transform .2s; /* Animation */
+
+
+}
+
+.signOutButton:hover,
+.signOutButton:focus {
+    background-color: #2d2a34a3;
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.signOutButton:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
