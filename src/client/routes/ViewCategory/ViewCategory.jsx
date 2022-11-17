@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-
 import Icon from '../../components/Logo/Icon.jsx';
 import { Link } from 'react-router-dom';
 import './ViewCategory.css';
@@ -9,6 +8,7 @@ import { NotesContext } from '../../Context/notesContext.jsx';
 import BigNote from '../../components/BigNote/BigNote.jsx';
 import AddNote from '../../components/AddNote/AddNote.jsx';
 import DeleteNote from '../../components/DeleteNote/DeleteNote.jsx';
+
 
 const ViewCategory = () => {
   const location = useLocation();

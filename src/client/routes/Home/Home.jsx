@@ -8,6 +8,7 @@ import {
   CategoriesProvider,
 } from '../../Context/categoriesContext.jsx';
 import { NotesContext, NotesProvider } from '../../Context/notesContext.jsx';
+import SignOut from '../../components/SignOut/SignOut.jsx';
 
 const Home = () => {
   // const [change, setChange] = useState(false);
@@ -39,11 +40,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="homeContainer">
-      <Logo />
-      <SearchBar />
-      <div className="dashContainer">
-        <Dashboard />
+    <div>
+      <div className="logout">
+        <SignOut />
+      </div>
+      <div className="homeContainer">
+        <Logo />
+        {/* <SearchBar /> */}
+        <div className="dashContainer">
+          <Dashboard />
+        </div>
       </div>
     </div>
   );
