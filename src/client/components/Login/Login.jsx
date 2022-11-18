@@ -46,7 +46,9 @@ const Login = () => {
           placeholder="Password"
         ></input>
       </label>
-      <button onClick={confirmUser}>Submit</button>
+      <button className="submitLogin" onClick={confirmUser}>
+        Submit
+      </button>
     </form>
   );
 };

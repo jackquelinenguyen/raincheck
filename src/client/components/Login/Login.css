@@ -1,0 +1,27 @@
+.formConfirmUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitLogin {
+    background-color: #2d2a34;
+    color: #ebebebb8;
+    font-family: monospace;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+}
+
+.loginPassword, .loginUser {
+    background-color: #ebebebb8;
+    color: #2d2a34;
+    font-family: monospace;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+    margin: .5rem;
+}

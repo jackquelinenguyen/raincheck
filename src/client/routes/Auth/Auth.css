@@ -1,8 +1,8 @@
 .authPageContainer {
     border: .5rem solid #ebebeb7d;
-    border-radius: 45rem;
-    width: 45rem;
-    height: 45rem;
+    border-radius: 49rem;
+    width: 49rem;
+    height: 49rem;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -12,11 +12,104 @@
     align-items: center;
     box-shadow: 0 4px 150px 0 rgba(193, 193, 193, 0.2), 0 6px 100px 0 rgba(151, 151, 151, 0.288);
     background-color: #3642645a;
+    z-index: -1;
 }
 
+
+.authIconContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 .authPageIcon {
+    width: 14rem;
+    height: 14rem;
+    background-image: url('../../components/Logo/raincheck-logo.png');
+    background-size: contain;
+}
+
+.authPageIcon:hover{
+    animation: rotation 2s infinite linear;
+  
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.forLogin {
+    z-index: 900;
+    background-color: #ebebeb43;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+    margin-bottom: 15rem;
+    box-shadow: inset 0px 0px 40px 40px #ebebeb43;
+}
+
+.forSignUp {
+    z-index: 900;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb43;
+    margin-left: 5rem;
+    margin-top: 15rem;
+    box-shadow: inset 0px 0px 40px 40px #ebebeb43;
 
 }
 
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transition: 400ms ease 100ms;
+    -moz-transition: 400ms ease 100ms;
+    transition: 400ms ease 400ms;
+}
+
+.options:hover div:not(:hover) {
+    filter: blur(3px);
+}
+
+
+ .loginButton {
+    background-color: #ebebebb8;
+    color: #2d2a34;
+    font-family: monospace;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+
+}
+
+
+.signUpButton {
+    background-color: #2d2a34;
+    color: #ebebebb8;
+    font-family: monospace;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+}

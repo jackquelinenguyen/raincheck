@@ -1,4 +1,7 @@
 
+::placeholder {
+    color: #2d2a349f;
+}
 .homeButton {
     margin-top: 6rem;
     margin-bottom: 2rem;
@@ -25,7 +28,7 @@
     margin: 2rem;
 }
 
-.newNote, .submitNote, .deleteButton {
+.newNote, .submitNote, .deleteButton, .confirmDelete {
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: fit-content;
@@ -55,11 +58,12 @@
     align-items: center; */
     /* display: grid;
     grid-template-rows: 1fr 1fr 1fr; */
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     width: fit-content;
     height: fit-content;
     margin-left: 6rem;
+    align-items: baseline;
 }
 
 .mainContainer {
@@ -68,7 +72,9 @@
 }
 
 .deleteNote {
-    margin-right: 15rem;
-    margin-top: 15rem;
-    align-self: baseline;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    align-items: baseline;
+    margin-top: 15.5rem;
 }

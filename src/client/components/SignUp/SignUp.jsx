@@ -47,7 +47,9 @@ const SignUp = () => {
           placeholder="New Password"
         ></input>
       </label>
-      <button onClick={createUser}>Submit</button>
+      <button className="submitUser" onClick={createUser}>
+        Submit
+      </button>
     </form>
   );
 };

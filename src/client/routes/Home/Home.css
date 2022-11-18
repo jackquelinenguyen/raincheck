@@ -16,7 +16,7 @@
     padding-right: 10rem;
     border: 5px solid #a0a8ba;
     /* box-shadow: 0 4px 15px 0 rgba(87, 87, 87, 0.2), 0 6px 20px 0 rgba(120, 120, 120, 0.19); */
-    box-shadow: 0 4px 8px 0 rgba(193, 193, 193, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.288);
+    box-shadow: 0 4px 20px 0 rgba(193, 193, 193, 0.2), 0 6px 80px 0 rgba(151, 151, 151, 0.288);
     overflow:hidden;
     width: 60%;
 }

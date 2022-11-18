@@ -18,21 +18,29 @@ const Auth = () => {
   };
 
   return (
-    <div className="authPageContainer">
-      <div className="forLogin">
-        <button onClick={toggleAuth}>Login</button>
-        {!signUp && <Login />}
+    <div>
+      <div className="authPageContainer"></div>
+      <div className="authIconContainer">
+        <div className="authPageIcon"></div>
       </div>
-      <div className="authPageIcon">
-        <Icon />
-      </div>
-      <div className="forSignUp">
-        <button onClick={toggleAuth}>SignUp</button>
-        {signUp && (
-          <div>
-            <SignUp />
-          </div>
-        )}
+
+      <div className="options">
+        <div className="forLogin">
+          <button className="loginButton" onClick={toggleAuth}>
+            Login
+          </button>
+          {!signUp && <Login />}
+        </div>
+        <div className="forSignUp">
+          <button className="signUpButton" onClick={toggleAuth}>
+            SignUp
+          </button>
+          {signUp && (
+            <div>
+              <SignUp />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
